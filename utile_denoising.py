@@ -209,7 +209,7 @@ def make_batch_with_pairs(batch_size, freq_integrated_signals, rec, noisy_rec,
 
 def gen(n):  #exercice 1 partie 1
   target = make_batch(n, rec = 0., noisy_rec= 0., disc = 0.002)
-  noise =  make_batch(n, rec = 0.0003, noisy_rec= 0.0003, disc = 0.)
+  noise =  make_batch(n, rec = 0.001, noisy_rec= 0., disc = 0.)
   return  target + noise, target     #bruit additif trivial
 
 def gen_noise2noise(n):
